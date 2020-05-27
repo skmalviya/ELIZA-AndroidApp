@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidChatBot</string>
+    <string name="enter_conversation_text_here">Enter Conversation Text Here</string>
+</resources>
