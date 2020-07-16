@@ -1,4 +1,4 @@
-﻿private void initializePhrases() {
+private void initializePhrases() {
         replacer_list.add(new Replacer(Where.CONTAINS,"मेरी मा", 0));
         replacer_list.add(new Replacer(Where.CONTAINS,"मेरे मा", 0));
         replacer_list.add(new Replacer(Where.CONTAINS,"मेरी मम्मी", 0));
@@ -24,54 +24,61 @@
         replacer_list.add(new Replacer(Where.CONTAINS,"मेरा नाना", 0));
         replacer_list.add(new Replacer(Where.CONTAINS,"मेरे दादा", 0));
         replacer_list.add(new Replacer(Where.CONTAINS, "मेरे दादी", 0));
+        replacer_list.add(new Replacer(Where.CONTAINS, "परिवार", 0));
         list_of_list_of_phrases.add( Arrays.asList( "मुझे अपने परिवार के बारे में और बताओ।",
                 "आपके परिवार में और कौन है ?","जब आप अपन परीवार के बारे में सोचते हैं तो आपके दिमाग में और क्या आता है ?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "दुख हुआ मुझे", 1));
         replacer_list.add(new Replacer(Where.CONTAINS, "दुखी हूं", 1));
         replacer_list.add(new Replacer(Where.CONTAINS, "दुख हो रहा है", 1));
+        replacer_list.add(new Replacer(Where.CONTAINS, "दुख है", 1));
         list_of_list_of_phrases.add( Arrays.asList("मुझे यह सुनकर दुख हुई कि आप खुश नहीं हैं।", "क्या आपको लगता है कि मुझसे बात करने से आपको मदद मिलेगी?","मुझे यकीन है कि आपको ये पसंद नहीं है।","क्या आप बता सकते हैं कि आपको दुखी होने के लिए किसने मजबूर किया?"));
-        replacer_list.add(new Replacer(Where.CONTAINS, "मुझे पसंद", 2));
-        replacer_list.add(new Replacer(Where.CONTAINS, "मुझे बोहत पसंद", 2));
-        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा लगता है", 2));
-        list_of_list_of_phrases.add( Arrays.asList( "तो आपको ये पसंद है।", "क्या आपको सही में पसंद है?","अच्छी बात है।") );
-        replacer_list.add(new Replacer(Where.CONTAINS, "नफरत है",3));
-        replacer_list.add(new Replacer(Where.CONTAINS, "नफरत करता हूं", 3));
-        replacer_list.add(new Replacer(Where.CONTAINS, "नफरत करती हूं", 3));
+        replacer_list.add(new Replacer(Where.CONTAINS, "नफरत है",2));
+        replacer_list.add(new Replacer(Where.CONTAINS, "नफरत करता हूं", 2));
+        replacer_list.add(new Replacer(Where.CONTAINS, "नफरत करती हूं", 2));
         list_of_list_of_phrases.add( Arrays.asList( "ऐसा क्यों?", "आप इससे नफरत क्यों करते है?","नफरत करने से कुछ समाधान नहीं होने वाला है।"));
-        replacer_list.add(new Replacer(Where.CONTAINS, "मुझे चाहिए", 4));
-        replacer_list.add(new Replacer(Where.CONTAINS, "चाहिए मुझे", 4));
+        replacer_list.add(new Replacer(Where.CONTAINS, "मुझे चाहिए", 3));
+        replacer_list.add(new Replacer(Where.CONTAINS, "चाहिए मुझे", 3));
         list_of_list_of_phrases.add( Arrays.asList("आपको ये क्यों चाहिए?","अगर आपको वो मिलजाए तो आप क्या करोगे?"));
-        replacer_list.add(new Replacer(Where.STARTS, "नमस्ते", 5));
-        replacer_list.add(new Replacer(Where.STARTS, "सुप्रवत", 5));
+        replacer_list.add(new Replacer(Where.STARTS, "नमस्ते", 4));
+        replacer_list.add(new Replacer(Where.STARTS, "सुप्रवत", 4));
         list_of_list_of_phrases.add( Arrays.asList("नमस्ते।", "आप कैसे है?"," कृपया मुझे अपनी समस्या बताएं।"));
-        replacer_list.add(new Replacer(Where.CONTAINS, "आप कैसे हो", 6));
-        replacer_list.add(new Replacer(Where.CONTAINS, "आप कैसे है", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "आप कैसे हो", 5));
+        replacer_list.add(new Replacer(Where.CONTAINS, "आप कैसे हो", 5));
+        replacer_list.add(new Replacer(Where.CONTAINS, "आप कैसे है", 5));
         list_of_list_of_phrases.add( Arrays.asList("में ठीक हूं। आप कैसे है?"));
-        replacer_list.add(new Replacer(Where.CONTAINS, "सुंदर", 7));
-        replacer_list.add(new Replacer(Where.CONTAINS, "बढ़िया", 7));
-        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा", 7));
-        replacer_list.add(new Replacer(Where.CONTAINS, "लाजवाब", 7));
-        replacer_list.add(new Replacer(Where.CONTAINS, "बोहोत बढ़िया", 7));
-        list_of_list_of_phrases.add( Arrays.asList("अच्छी बात है।","क्या ये सही में अच्छा है?", "अच्छा लगा सुनकर।"));
-        replacer_list.add(new Replacer(Where.CONTAINS, "खराब", 8));
-        replacer_list.add(new Replacer(Where.CONTAINS, "भयानक", 8));
-        replacer_list.add(new Replacer(Where.CONTAINS,"बोहोत बुरा", 8));
-        list_of_list_of_phrases.add( Arrays.asList("इतना बुरा मत सोचिए।", "क्या ये खराब है?","इसमें कुछ गलत लगा क्या?"));
-        replacer_list.add(new Replacer(Where.STARTS, "चलो मिलते है फिर कबी।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "अब मैं चलता हूं।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "अब मैं चलती हूं।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "बाद में बात करता हूं।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "बाद में बात करती हूं।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "बाद में बात करते है।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "धन्यवाद।", 9));
-        replacer_list.add(new Replacer(Where.STARTS, "अच्छा लगा आपसे बात करके।", 9));
+        replacer_list.add(new Replacer(Where.CONTAINS, "फिर कबी मिलते है", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "फिर मिलते है कबी", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "चलो मिलते है फिर कबी", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अब मैं चलता हूं", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अब मैं चलती हूं", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "बाद में बात करता हूं", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "बाद में बात करती हूं", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "बाद में बात करते है", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "धन्यवाद", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा लगा आपसे बात करके", 6));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा लगा आपसे", 6));
         list_of_list_of_phrases.add( Arrays.asList("नमस्ते। मुझसे बात करने के लिए धन्यवाद।", "धन्यवाद।"," मुझे अच्छी लगी आपसे बात करके।",
                 "फिर मिलते है कबी।", "आपना ध्यान रखना।"));
+        replacer_list.add(new Replacer(Where.CONTAINS, "मुझे पसंद", 7));
+        replacer_list.add(new Replacer(Where.CONTAINS, "मुझे बोहत पसंद", 7));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा लगता है", 7));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा लगा", 7));
+        list_of_list_of_phrases.add( Arrays.asList( "तो आपको ये पसंद है।", "क्या आपको सही में पसंद है?","अच्छी बात है।"));
+        replacer_list.add(new Replacer(Where.CONTAINS, "खराब", 8));
+        replacer_list.add(new Replacer(Where.CONTAINS, "भयानक", 8));
+        replacer_list.add(new Replacer(Where.CONTAINS,"बहुत बुरा", 8));
+        list_of_list_of_phrases.add( Arrays.asList("इतना बुरा मत सोचिए।", "क्या ये खराब है?","इसमें कुछ गलत लगा क्या?"));
+        replacer_list.add(new Replacer(Where.CONTAINS, "सुंदर", 9));
+        replacer_list.add(new Replacer(Where.CONTAINS, "बढ़िया", 9));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अच्छा", 9));
+        replacer_list.add(new Replacer(Where.CONTAINS, "लाजवाब", 9));
+        replacer_list.add(new Replacer(Where.CONTAINS, "बहुत बढ़िया", 9));
+        list_of_list_of_phrases.add( Arrays.asList("अच्छी बात है।","क्या ये सही में अच्छा है?", "अच्छा लगा सुनकर।"));
         replacer_list.add(new Replacer(Where.CONTAINS, "कंप्यूटर", 10));
         list_of_list_of_phrases.add( Arrays.asList("क्या कंप्यूटर आपको परेशान करते हैं ?", "आपने कंप्यूटरों की चर्चा क्यों की ?",
                 "क्या आपको नहीं लगता कि कंप्यूटर 	लोगों की मदद कर सकता है ?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "नाम", 11));
-        list_of_list_of_phrases.add( Arrays.asList("मुझे नामों में कोई दिलचस्पी नहीं है।","कृपया आगे कहें "));
+        list_of_list_of_phrases.add( Arrays.asList("मुझे नामों में कोई दिलचस्पी नहीं है।","कृपया आगे कहें।"));
         replacer_list.add(new Replacer(Where.CONTAINS,"मशीन", 12));
         list_of_list_of_phrases.add( Arrays.asList("मशीनों के बारे में आपको क्या चिंता है ?","आप मशीनों के बारे में क्या सोचते हैं ?","आपको क्या लगता है कि मशीनों को आपकी समस्या से क्या लेना-देना है ?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "क्षमा करना", 13));
@@ -80,21 +87,23 @@
         replacer_list.add(new Replacer(Where.CONTAINS,"माफ करना", 13));
         list_of_list_of_phrases.add( Arrays.asList("कृपया क्षमा न मांगिये।","माफी मांगना जरूरी नहीं है।"));
         replacer_list.add(new Replacer(Where.CONTAINS, "मुझे याद है कि", 14));
-        list_of_list_of_phrases.add( Arrays.asList("क्या आप अक्सर सोचते हैं कि %3$s?","क्या इसके के बारे में सोचने से दिमाग में कुछ और आता है ?",
-                "आप और क्या याद कर पा रहे हैं ?", " आपने इसको को अभी ही क्यों याद किया ? ", "मेरे और %3$s के बीच क्या संबंध है ? "));
+        list_of_list_of_phrases.add( Arrays.asList("क्या आप अक्सर ये सोचते हैं?","क्या इसके के बारे में सोचने से दिमाग में कुछ और आता है ?",
+                "आप और क्या याद कर पा रहे हैं ?", " आपने इसको को अभी ही क्यों याद किया ?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "क्या तुम्हें याद है", 15));
-        list_of_list_of_phrases.add( Arrays.asList("क्या आपको लगा कि मै भूल जाऊंगी?","आपको क्यों लगता है कि मुझे  %3$s को अब याद करना चाहिए?", "आपने इस चीज का उल्लेख पहले किया है?"));
+        list_of_list_of_phrases.add( Arrays.asList("क्या आपको लगा कि मै भूल जाऊंगी?","आपको क्यों लगता है कि मुझे इसको अब याद करना चाहिए?", "आपने इस चीज का उल्लेख पहले किया है क्या?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "यदि", 16));
-        list_of_list_of_phrases.add( Arrays.asList("क्या आपको लगता है कि इसकी संभावना है  कि %3$s?",
-                "क्या आप चाहते हैं कि %3$s?", "वास्तव में, अगर ऐसा हुआ तो?"));
+        replacer_list.add(new Replacer(Where.CONTAINS, "अगर", 16));
+        list_of_list_of_phrases.add( Arrays.asList("क्या आपको लगता है कि इसकी संभावना है।","आप ऐसा क्यों सोच रहे है?",
+                "क्या आप चाहते हैं कि ऐसा हो?", "वास्तव में, अगर ऐसा हुआ तो?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "मैंने सपना देखा", 17));
         replacer_list.add(new Replacer(Where.CONTAINS, "मैंने सपने में देखा",17));
         replacer_list.add(new Replacer(Where.CONTAINS,"सपने में आया", 17));
-        list_of_list_of_phrases.add( Arrays.asList("वास्तव में, %3$s ?","क्या आपने कभी जागते हुए ये सब कल्पना की है ? ",
+        list_of_list_of_phrases.add( Arrays.asList("क्या आपने कभी जागते हुए ये सब कल्पना की है ? ",
                 "क्या आपने पहले कभी ऐसा सपना देखा है ?", "वह सपना आपको क्या बताता है?", "क्या आप अक्सर सपने देखते हैं?","आपके सपने में कौन से व्यक्ति दिखाई देते हैं?","क्या आप मानते हैं कि सपनों का आपकी समस्याओं से कुछ लेना-देना है ?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "क्युकी", 18));
         replacer_list.add(new Replacer(Where.CONTAINS, "क्यों की", 18));
-        list_of_list_of_phrases.add( Arrays.asList(" क्या वही एक असली कारण है ?",
+        replacer_list.add(new Replacer(Where.CONTAINS, "क्योंकि", 18));
+        list_of_list_of_phrases.add( Arrays.asList("क्या वही एक असली कारण है ?",
                 "क्या कोई और कारण नहीं हैं जो आप सोच पा रहे हैं ?", "क्या वह कारण कुछ समझाने की कोशिश कर रहा है ?",
                 "और क्या कारण हो सकते हैं ?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "में खुश हूं", 19));
@@ -105,7 +114,7 @@
         replacer_list.add(new Replacer(Where.CONTAINS, "दोस्त", 20));
         replacer_list.add(new Replacer(Where.CONTAINS, "दोस्ती", 20));
         replacer_list.add(new Replacer(Where.CONTAINS, "मित्र", 20));
-        list_of_list_of_phrases.add( Arrays.asList("क्या आप अच्छे दोस्त है?","क्या आपको इस दोस्ती से कुछ परेशानी हो रही है?", "आपके दोस्त के बारे में और बताइए?"));
+        list_of_list_of_phrases.add( Arrays.asList("क्या आप अच्छे दोस्त है?","क्या आपको इस दोस्ती से कुछ मदद हो रही है?", "आपके दोस्त के बारे में मुझे बताइए?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "एक जैसा", 21));
         replacer_list.add(new Replacer(Where.CONTAINS, "कोई अंतर नहीं", 21));
         list_of_list_of_phrases.add( Arrays.asList("किस तरह से ?", "आप इसमें क्या समानता देखते हैं ?","यह समानता आपको क्या सुझाव देती है ?",
@@ -118,6 +127,7 @@
         replacer_list.add(new Replacer(Where.CONTAINS, "मुझे तो लगता है",22));
         list_of_list_of_phrases.add( Arrays.asList("आपको ऐसा क्यों लगता है?","कोई बिसेस कारण है क्या ऐसा लगने का?", "ऐसा नहीं भी तो हो सकता है।","हो सकता है।"));
         replacer_list.add(new Replacer(Where.CONTAINS, "बिस्वास है", 23));
+        replacer_list.add(new Replacer(Where.CONTAINS, "विश्वास है", 23));
         list_of_list_of_phrases.add( Arrays.asList("क्या सच में आप ऐसा सोचते हैं?","क्या आपको पूरा यकीन है?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "याद नहीं", 24));
         list_of_list_of_phrases.add( Arrays.asList("क्या आपको बिल्कुल याद नहीं अरहा है?","कृपया और सोचिए।","कुछ और याद आए तो बताना।"));
@@ -135,16 +145,16 @@
         replacer_list.add(new Replacer(Where.CONTAINS, "तुम्हारे", 27));
         replacer_list.add(new Replacer(Where.CONTAINS, "आपको", 27));
         list_of_list_of_phrases.add( Arrays.asList( " आप मेरे बारे में क्यों चिंतित हैं?","क्या आपको लगता है कि ये सच है?"));
-        replacer_list.add(new Replacer(Where.STARTS, "नहीं", 28));
-        replacer_list.add(new Replacer(Where.STARTS, "ना", 28));
-        replacer_list.add(new Replacer(Where.STARTS, "कभी नहीं", 28));
-        replacer_list.add(new Replacer(Where.STARTS, "ऐसा नहीं है", 28));
+        replacer_list.add(new Replacer(Where.CONTAINS, "नहीं", 28));
+        replacer_list.add(new Replacer(Where.CONTAINS, "ना", 28));
+        replacer_list.add(new Replacer(Where.CONTAINS,"कभी नहीं", 28));
+        replacer_list.add(new Replacer(Where.CONTAINS, "ऐसा नहीं है", 28));
         list_of_list_of_phrases.add(Arrays.asList("क्यों नहीं ?", "आप माना क्यों कर रहे हो?", "क्या आप निश्चित हो?"));
-        replacer_list.add(new Replacer(Where.STARTS, "हा", 29));
-        replacer_list.add(new Replacer(Where.STARTS, "बिल्कुल सही", 29));
-        replacer_list.add(new Replacer(Where.STARTS, "सही बात", 29));
-        replacer_list.add(new Replacer(Where.STARTS, "सही कहा", 29));
-        replacer_list.add(new Replacer(Where.STARTS, "एकदम सही", 29));
+        replacer_list.add(new Replacer(Where.CONTAINS, "हा", 29));
+        replacer_list.add(new Replacer(Where.CONTAINS, "बिल्कुल सही", 29));
+        replacer_list.add(new Replacer(Where.CONTAINS, "सही बात", 29));
+        replacer_list.add(new Replacer(Where.CONTAINS, "सही कहा", 29));
+        replacer_list.add(new Replacer(Where.CONTAINS, "एकदम सही", 29));
         list_of_list_of_phrases.add( Arrays.asList( "आपकी सोच काफी सकारात्मक है।", "सही में?", "तो ये सच है।", "क्या आप निश्चित हो?",
                 "मैं समझ रही हूँ।", "मैं समझती हूँ।"));
         replacer_list.add(new Replacer(Where.CONTAINS, "कुछ लोग", 30));
@@ -160,11 +170,11 @@
         replacer_list.add(new Replacer(Where.CONTAINS, "हमेशा", 32));
         list_of_list_of_phrases.add( Arrays.asList( "इसके लिए क्या आप कोई उदाहरण देना चाहेंगे ?","आप किस घटना के बारे में सोच रहे हैं ?",
                 "कब ?", "वास्तव में, हमेशा ही  ?"));
-        replacer_list.add(new Replacer(Where.STARTS, "क्या", 33));
-        replacer_list.add(new Replacer(Where.STARTS, "क्यों", 33));
-        replacer_list.add(new Replacer(Where.STARTS, "कौन", 33));
-        replacer_list.add(new Replacer(Where.STARTS, "कब", 33));
-        replacer_list.add(new Replacer(Where.STARTS, "कहा", 33));
+        replacer_list.add(new Replacer(Where.CONTAINS, "क्या", 33));
+        replacer_list.add(new Replacer(Where.CONTAINS, "क्यों", 33));
+        replacer_list.add(new Replacer(Where.CONTAINS, "कौन", 33));
+        replacer_list.add(new Replacer(Where.CONTAINS, "कब", 33));
+        replacer_list.add(new Replacer(Where.CONTAINS, "कहा", 33));
         list_of_list_of_phrases.add( Arrays.asList( " आपने ये क्यों पूछा ?", "क्या इस सवाल में आपकी कोई विशेष रुचि है ?",
                 " यह आप वास्तव में क्या जानना चाहते हैं ?","क्या इस तरह के प्रश्न आपके दिमाग में ज्यादा हैं ?", "आप क्या सोचते हैं ?", "क्या आपने यह किसी और से पूछा है?"));
         replacer_list.add(new Replacer(Where.CONTAINS, "सायद", 34));
@@ -175,23 +185,24 @@
     }
 
     private void initializeWordsToReplace() {
-        phrase_conversion.put("आपके "," मेरे ");
-        phrase_conversion.put("आप "," मैं ");
-        phrase_conversion.put("आपने "," मैंने ");
-        phrase_conversion.put("आपसे "," मुझसे ");
-        phrase_conversion.put("तुम ", " मैं ");
-        phrase_conversion.put("तुमने "," मैंने ");
-        phrase_conversion.put("तुमसे "," मुझसे ");
-        phrase_conversion.put("तुम्हारे "," मेरे ");
-        phrase_conversion.put("हमने "," तुमने ");
-        phrase_conversion.put("हमको "," तुमको ");
-        phrase_conversion.put("हमलोग "," तुमलोग ");
-        phrase_conversion.put("हमारा "," तुम्हारा ");
-        phrase_conversion.put("मेरा "," तुम्हारा ");
-        phrase_conversion.put("मेरी "," तुम्हारी ");
-        phrase_conversion.put("मेरे "," तुम्हारे ");
-        phrase_conversion.put("मुझसे "," तुमसे ");
-        phrase_conversion.put("मुझे "," तुम्हे ");
-        phrase_conversion.put("मुझको "," तुमको ");
+        phrase_conversion.put("आपके ","मेरे ");
+        phrase_conversion.put("आप ","मैं ");
+        phrase_conversion.put("मैं ","आप");
+        phrase_conversion.put("आपने ","मैंने ");
+        phrase_conversion.put("आपसे ","मुझसे ");
+        phrase_conversion.put("तुम ", "मैं ");
+        phrase_conversion.put("तुमने ","मैंने ");
+        phrase_conversion.put("तुमसे ","मुझसे ");
+        phrase_conversion.put("तुम्हारे ","मेरे ");
+        phrase_conversion.put("हमने ","तुमने ");
+        phrase_conversion.put("हमको ","तुमको ");
+        phrase_conversion.put("हमलोग ","तुमलोग ");
+        phrase_conversion.put("हमारा ","तुम्हारा ");
+        phrase_conversion.put("मेरा ","तुम्हारा ");
+        phrase_conversion.put("मेरी ","तुम्हारी ");
+        phrase_conversion.put("मेरे ","तुम्हारे ");
+        phrase_conversion.put("मुझसे ","तुमसे ");
+        phrase_conversion.put("मुझे ","तुम्हे ");
+        phrase_conversion.put("मुझको ","तुमको ");
     }
 }
