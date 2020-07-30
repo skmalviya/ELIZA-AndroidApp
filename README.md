@@ -5,7 +5,7 @@ Eliza is a rule-based chatbot where input sentences are analyzed on the basis of
 
 In this project, We developed a complete speech enabled  chatbot where the user will interact with the chatbot in Hindi language. The chatbot development can be classified into 3 categories: Android Application Development, Generating Eliza Responses and Speech Interaction with user.
 
-Android Application Development -
+##Android Application Development -
 
 I used the software – Android Studio for developing the Android Application for Hindi Eliza.
 The Android App Api can be downloaded from the link: Hindi_Eliza. The App has to be installed and used in an Android Smartphone.
@@ -19,3 +19,4 @@ the speech icon to the right with the keyboard set to Hindi language.
 
 The User Interface of the App can be seen from the picture.
 
+![image](https://user-images.githubusercontent.com/40790714/88953498-a7d73080-d2b6-11ea-8dc5-5b924621b1f2.png)
