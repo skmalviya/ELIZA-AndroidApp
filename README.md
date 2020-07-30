@@ -5,7 +5,7 @@ Eliza is a rule-based chatbot where input sentences are analyzed on the basis of
 
 In this project, We developed a complete speech enabled  chatbot where the user will interact with the chatbot in Hindi language. The chatbot development can be classified into 3 categories: Android Application Development, Generating Eliza Responses and Speech Interaction with user.
 
-##Android Application Development -
+## Android Application Development -
 
 I used the software – Android Studio for developing the Android Application for Hindi Eliza.
 The Android App Api can be downloaded from the link: Hindi_Eliza. The App has to be installed and used in an Android Smartphone.
@@ -20,3 +20,39 @@ the speech icon to the right with the keyboard set to Hindi language.
 The User Interface of the App can be seen from the picture.
 
 ![image](https://user-images.githubusercontent.com/40790714/88953498-a7d73080-d2b6-11ea-8dc5-5b924621b1f2.png)
+
+## Generating Eliza Responses -
+
+The input given by the user is first prepared by removing the punctuations (if any) and then the phrases from the text are searched in the list of keywords/phrases serially from index 0 to higher indices. The keywords are stored in a List according to the importance of the words/phrases and the various possible responses to the phrases are stored in another list with the same index value.
+
+For example:
+replacer_list.add(new Replacer(Where.STARTS, "नमस्ते", 4));
+replacer_list.add(new Replacer(Where.STARTS, "सुप्रवत", 4));
+list_of_list_of_phrases.add( Arrays.asList("नमस्ते।", "आप कैसे है?"," कृपया मुझे अपनी समस्या बताएं।"));
+
+If the user starts the statement with "नमस्ते" or "सुप्रवत", then the Eliza responds with one randomly selected statement from list_of_list_of phrases.
+The randomness in selection of responses ensures that the responses are not redundant when the keywords are repeated.
+
+Another example:
+replacer_list.add(new Replacer(Where.CONTAINS, "कंप्यूटर", 10));
+list_of_list_of_phrases.add( Arrays.asList("क्या कंप्यूटर आपको परेशान करते हैं ?", "आपने कंप्यूटरों की चर्चा क्यों की ?","क्या आपको नहीं लगता कि कंप्यूटर लोगों की मदद कर सकता है ?"))
+
+If the user mentions "कंप्यूटर", one of the available responses is randomly generated.
+
+replacer_list.add(new Replacer(Where.CONTAINS, "यदि", 16));
+replacer_list.add(new Replacer(Where.CONTAINS, "अगर", 16));
+list_of_list_of_phrases.add( Arrays.asList("क्या आपको लगता है कि इसकी संभावना है।","आप ऐसा क्यों सोच रहे है?", "क्या आप चाहते हैं कि ऐसा हो?", "वास्तव में, अगर ऐसा हुआ तो?"))
+
+The above example illustrates the possible response that will be generated when the user’s statement contains "यदि" or "अगर".
+
+In case, the user’s statement doesn’t match with the keywords/phrases, then the following generic responses will be generated.
+"मुझे पता नहीं कि मैं आपको समझ पा रही हूँ या नहीं।"
+"कृपया। और बताइये। "
+"यह आपको क्या बताता है ?"
+"क्या आप सच में इसके बारे में और बात करना चाहते हैं ?"
+"और बताइये।"
+"कृपया आगे कहें।"
+
+There is scope for improvement in the Hindi Script which matches the keywords/phrases and can enhance the performance of the Chatbot.
+
+The following conversations with Eliza will give a better idea about its working.
